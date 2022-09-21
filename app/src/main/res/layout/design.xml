@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_marginTop="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/login_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                >
+                <TableRow
+
+                    android:background="@color/com6">
+
+                    <TextView
+                        android:layout_centerVertical="true"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/username"
+                        android:text="Account Information"
+                        android:textColor="@android:color/white"
+                        android:padding="10sp"
+                        android:textAllCaps="true"
+
+                        android:textAlignment="center"
+                        android:textSize="@dimen/space_15dp"
+                        android:layout_weight="10"
+                        android:gravity="center_horizontal"
+                        />
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@drawable/border"
+                        android:gravity="center_horizontal"
+                        android:padding="10sp"
+                        android:text="Login ID"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+
+
+                    <TextView
+                        android:background="@drawable/border"
+                        android:text="1234"
+                        android:id="@+id/loginid"
+
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+
+                        android:padding="10sp"
+                        android:textSize="12dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center_horizontal"
+                        android:textAllCaps="false"
+                        android:textColor="#000"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+
+                </TableRow>
+                <TableRow>
+
+
+                    <TextView
+                        android:background="@drawable/border"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:text="Name"
+                        android:padding="10sp"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+
+
+
+                    <TextView
+                        android:background="@drawable/border"
+                        android:text="Anaf"
+                        android:id="@+id/name"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+
+                        android:padding="10sp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="12dp"
+                        android:textAllCaps="false"
+                        android:textColor="#000"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+
+                </TableRow>
+
+
+
+
+                <TableRow
+                    android:visibility="gone">
+
+                    <TextView
+                        android:background="@drawable/border"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:text="Ranking "
+                        android:padding="10sp"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/ranking"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="4"
+                        android:background="@drawable/border"
+
+                        android:gravity="center_horizontal"
+                        android:padding="10sp"
+                        android:text="3 Star"
+                        android:textAllCaps="false"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+                </TableRow>
+                <TableRow
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:background="@drawable/border"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:text="Leaders Club\nBonus"
+                        android:padding="10sp"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+
+
+
+                    <TextView
+                        android:background="@drawable/border"
+                        android:text="@string/work"
+                        android:id="@+id/leadershping"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+
+                        android:padding="10sp"
+                        android:textSize="12dp"
+                        android:textAllCaps="false"
+                        android:textColor="#000"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+
+                </TableRow>
+                <TableRow>
+
+
+                    <TextView
+                        android:visibility="gone"
+                        android:background="@drawable/border"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:text="Monthly Income"
+                        android:padding="10sp"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+
+
+
+                    <TextView
+                        android:visibility="gone"
+                        android:background="@drawable/border"
+                        android:text="@string/work"
+                        android:id="@+id/monthly"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+
+                        android:padding="10sp"
+                        android:textSize="12dp"
+                        android:textAllCaps="false"
+                        android:textColor="#000"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/border"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:visibility="gone"
+                        android:text="Rating   \nBonus"
+                        android:padding="10sp"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+
+
+
+                    <TextView
+                        android:background="@drawable/border"
+                        android:text="@string/work"
+                        android:layout_width="0dp"
+                        android:id="@+id/match"
+                        android:layout_height="50dp"
+                        android:visibility="gone"
+                        android:padding="10sp"
+                        android:textSize="12dp"
+                        android:textAllCaps="false"
+                        android:textColor="#000"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:background="@drawable/border"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:text="Matching    \nBonus"
+                        android:padding="10sp"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+
+
+
+                    <TextView
+                        android:background="@drawable/border"
+                        android:text="0"
+                        android:layout_width="0dp"
+                        android:visibility="gone"
+                        android:layout_height="50dp"
+
+                        android:padding="10sp"
+                        android:textSize="12dp"
+                        android:textAllCaps="false"
+                        android:textColor="#000"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+
+                </TableRow>
+                <TableRow
+
+                    >
+                    <TextView
+                        android:background="@drawable/border"
+                        android:text="Refer : "
+
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+
+                        android:padding="10sp"
+                        android:textSize="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="#000"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:background="@drawable/border"
+                        android:text="0"
+                        android:id="@+id/sponsar"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+
+                        android:padding="10sp"
+                        android:textSize="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="#000"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+                </TableRow>
+
+
+            </TableLayout>
+            <RelativeLayout
+                android:layout_below="@id/table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <include
+
+                    layout="@layout/sev"
+                    ></include>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

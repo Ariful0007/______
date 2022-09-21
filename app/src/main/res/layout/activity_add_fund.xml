@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".AddFund">
+    <RelativeLayout
+
+        android:id="@+id/main_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/gradient_background"
+                />
+
+        </com.google.android.material.appbar.AppBarLayout>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/borderfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/space_10dp"
+                android:layout_marginRight="@dimen/space_10dp"
+                android:gravity="center_vertical"
+                android:text="Deposit Request Amount"
+                android:textStyle="normal"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+
+
+                ></TextView>
+            <EditText
+                android:id="@+id/spinner1"
+
+                android:hint="      Enter Deposit Request amount"
+                android:background="@drawable/border"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:inputType="numberDecimal"
+                android:layout_marginRight="@dimen/space_20dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50dp"
+                ></EditText>
+            //
+            <TextView
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/space_10dp"
+                android:layout_marginRight="@dimen/space_10dp"
+                android:gravity="center_vertical"
+                android:text="Payment Method"
+                android:textStyle="normal"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+
+
+                ></TextView>
+            <Spinner
+                android:id="@+id/spinnerTextSize"
+                android:maxLength="11"
+
+                android:background="@drawable/border"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:inputType="text"
+                android:layout_marginRight="@dimen/space_20dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50dp"
+                ></Spinner>
+            //
+            //
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/space_10dp"
+                android:layout_marginRight="@dimen/space_10dp"
+                android:gravity="center_vertical"
+                android:text="Payment Number"
+                android:textStyle="normal"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+
+
+                ></TextView>
+            <EditText
+
+                android:onClick="gatww"
+                android:hint="      Currencies"
+                android:id="@+id/g_numbers"
+                android:background="@drawable/border"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:inputType="text"
+                android:layout_marginRight="@dimen/space_20dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50dp"
+                ></EditText>
+            //
+
+            //
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/space_10dp"
+                android:layout_marginRight="@dimen/space_10dp"
+                android:gravity="center_vertical"
+                android:text="Transcation Number"
+                android:textStyle="normal"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+
+
+                ></TextView>
+            <EditText
+                android:maxLength="11"
+                android:id="@+id/transcationpin"
+                android:hint="      Enter payment transcation number"
+                android:background="@drawable/border"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:inputType="text"
+                android:layout_marginRight="@dimen/space_20dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50dp"
+                ></EditText>
+            //
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/space_10dp"
+                android:layout_marginRight="@dimen/space_10dp"
+                android:gravity="center_vertical"
+                android:text="Phone Number"
+                android:textStyle="normal"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+
+
+                ></TextView>
+            <EditText
+                android:maxLength="11"
+                android:id="@+id/numbers"
+                android:hint="      Enter your phone number"
+                android:background="@drawable/border"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:inputType="phone"
+                android:layout_marginRight="@dimen/space_20dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50dp"
+                ></EditText>
+            <Button
+                android:id="@+id/cirLoginButton"
+                style="@style/loginButton"
+                android:text="SUBMIT"
+                android:textAllCaps="true"
+
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/loginViewsMargin"/>
+            <TextView
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/space_10dp"
+                android:layout_marginRight="@dimen/space_10dp"
+                android:gravity="center_vertical"
+                android:text="Shop Balance : 102tk"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+
+
+                ></TextView>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

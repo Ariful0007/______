@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TranscationMain">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+
+            android:id="@+id/main_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@drawable/gradient_background"
+                    app:popupTheme="@style/AppTheme.PopupOverlay"  />
+
+            </com.google.android.material.appbar.AppBarLayout>
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/slider"
+                    android:visibility="gone"
+                    android:layout_margin="@dimen/space_10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:sliderAnimationDuration="100"
+                    app:placeholder="@drawable/loading"
+                    app:error_image="@drawable/error"
+                    app:delay="0"
+                    app:period="4000"
+                    app:sliderAutoCycleDirection="back_and_forth"
+                    app:sliderIndicatorAnimationDuration="600"
+                    app:sliderIndicatorEnabled="false"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorMargin="15dp"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="2dp"
+                    app:sliderIndicatorSelectedColor="#5A5A5A"
+                    app:sliderIndicatorUnselectedColor="#FFF"
+                    app:sliderScrollTimeInSec="1" />
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/wor1111k11"
+                        android:onClick="convert"
+                        android:visibility="gone"
+
+                        android:layout_width="0dp"
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
+
+                        app:cardBackgroundColor="@color/com6"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="10dp"
+
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardUseCompatPadding="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:foregroundTint="@color/white"
+                                android:layout_width="50dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginRight="10dp"
+                                android:id="@+id/bb"
+
+                                android:layout_height="@dimen/space_50dp"
+                                android:layout_centerInParent="false"
+                                android:background="@drawable/currency" />
+
+
+
+                            <TextView
+                                android:layout_centerVertical="true"
+                                android:layout_below="@+id/bb"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="false"
+                                android:layout_centerInParent="true"
+                                android:padding="8dp"
+                                android:layout_marginLeft="0dp"
+                                android:textSize="12dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/open_sans_bold"
+                                android:text=" Convert All Balance"
+                                android:gravity="center_horizontal" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+                    //date
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/work3322"
+                        android:layout_width="0dp"
+                        android:onClick="ree"
+
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
+
+                        app:cardBackgroundColor="@color/com6"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="10dp"
+
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardUseCompatPadding="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="50dp"
+                                android:id="@+id/ddd1"
+                                android:layout_height="@dimen/space_50dp"
+                                android:layout_alignParentRight="false"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/piechart"
+                                android:foregroundTint="@color/white" />
+
+
+                            <TextView
+                                android:layout_centerVertical="true"
+
+                                android:layout_below="@+id/ddd1"
+                                android:id="@+id/date1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="0dp"
+                                android:fontFamily="@font/open_sans_bold"
+                                android:gravity="center_horizontal"
+                                android:padding="8dp"
+                                android:text=" Top Chart "
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="12dp" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/wor1111k11f"
+                        android:visibility="gone"
+
+                        android:layout_width="0dp"
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
+
+                        app:cardBackgroundColor="@color/colorMeetingInvitationStart"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="10dp"
+
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardUseCompatPadding="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:foregroundTint="@color/white"
+                                android:layout_width="50dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginRight="10dp"
+                                android:id="@+id/bb1"
+
+                                android:layout_height="@dimen/space_50dp"
+                                android:layout_centerInParent="false"
+                                android:background="@drawable/dollar" />
+
+
+
+                            <TextView
+                                android:layout_centerVertical="true"
+                                android:layout_below="@+id/bb1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="false"
+                                android:layout_centerInParent="true"
+                                android:padding="8dp"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="12dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/open_sans_bold"
+                                android:text=" Convert"
+                                android:gravity="center_horizontal" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/wor1111k1"
+                            android:onClick="withdraw"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:layout_weight="1"
+
+                            app:cardBackgroundColor="@color/com6"
+                            app:cardElevation="4dp"
+                            app:cardCornerRadius="10dp"
+
+                            android:clickable="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            app:cardUseCompatPadding="true">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/dddd1"
+                                    android:foregroundTint="@color/white"
+                                    android:layout_width="50dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_alignParentRight="false"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_height="@dimen/space_50dp"
+                                    android:layout_centerInParent="false"
+                                    android:background="@drawable/withdraw___ss" />
+
+
+
+                                <TextView
+                                    android:layout_below="@id/dddd1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerInParent="true"
+                                    android:padding="8dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:textSize="12dp"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/open_sans_bold"
+                                    android:text="Withdraw"
+                                    android:gravity="center_horizontal" />
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        //date
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/work33"
+                            android:onClick="transfer"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="130dp"
+                            android:layout_weight="1"
+
+                            app:cardBackgroundColor="@color/com6"
+                            app:cardElevation="4dp"
+                            app:cardCornerRadius="10dp"
+
+                            android:clickable="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            app:cardUseCompatPadding="true">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="50dp"
+                                    android:id="@+id/ddd"
+                                    android:layout_height="@dimen/space_50dp"
+                                    android:layout_alignParentRight="false"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/money_send"
+                                    android:foregroundTint="@color/white" />
+
+
+                                <TextView
+                                    android:layout_centerVertical="true"
+
+                                    android:layout_below="@+id/ddd"
+                                    android:id="@+id/date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="0dp"
+                                    android:fontFamily="@font/open_sans_bold"
+                                    android:gravity="center_horizontal"
+                                    android:padding="8dp"
+                                    android:text=" Send Money "
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="12dp" />
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/wor1111k"
+                            android:onClick="fund"
+                            android:visibility="visible"
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:layout_weight="1"
+
+                            app:cardBackgroundColor="@color/com6"
+                            app:cardElevation="4dp"
+                            app:cardCornerRadius="10dp"
+
+                            android:clickable="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            app:cardUseCompatPadding="true">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/dddd"
+                                    android:foregroundTint="@color/white"
+                                    android:layout_width="50dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_alignParentRight="false"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_height="@dimen/space_50dp"
+                                    android:layout_centerInParent="false"
+                                    android:background="@drawable/stackofcoins" />
+
+
+
+                                <TextView
+                                    android:layout_below="@id/dddd"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerInParent="true"
+                                    android:padding="8dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:textSize="12dp"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/open_sans_bold"
+                                    android:text="Request for Deposit Amount"
+                                    android:gravity="center_horizontal" />
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/wor111136k"
+                        android:onClick="wor111136k"
+                        android:visibility="visible"
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
+
+                        app:cardBackgroundColor="@color/com6"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="10dp"
+
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardUseCompatPadding="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/dddd22"
+                                android:foregroundTint="@color/white"
+                                android:layout_width="50dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_alignParentRight="false"
+                                android:layout_centerHorizontal="true"
+                                android:layout_height="@dimen/space_50dp"
+                                android:layout_centerInParent="false"
+                                android:background="@drawable/stackofcoins" />
+
+
+
+                            <TextView
+                                android:layout_below="@id/dddd22"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerInParent="true"
+                                android:padding="8dp"
+                                android:layout_marginLeft="20dp"
+                                android:textSize="12dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/open_sans_bold"
+                                android:text="Deposit Request History"
+                                android:gravity="center_horizontal" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+</ScrollView>

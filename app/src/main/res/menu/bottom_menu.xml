@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:id="@+id/bottom_home"
+        android:icon="@drawable/sweethome"/>
+    <item android:title="Our Plan"
+        android:id="@+id/bottom_chat"
+        android:icon="@drawable/voucher"/>
+
+
+    <item android:title="Profile"
+        android:id="@+id/profil"
+        android:icon="@drawable/man__tanjila"/>
+
+</menu>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "205598307072",
+    "project_id": "studentjob-dadd0",
+    "storage_bucket": "studentjob-dadd0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:205598307072:android:882ea11805fb22c4fcb9e5",
+        "android_client_info": {
+          "package_name": "com.meass.student_job_salary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "205598307072-aeojj3m844c7788ltcg8giffegpggj9d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCues7PKaHmFNPsBrdbeKq9kytd8EnWe5U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "205598307072-aeojj3m844c7788ltcg8giffegpggj9d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

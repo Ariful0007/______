@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.meass.student_job_salary">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:exported="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".HelplineActivity"
+            android:parentActivityName=".HomeACTIVITY"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity android:name=".AddFund"
+            android:parentActivityName=".TranscationMain"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"></activity>
+        <activity android:name=".TotalHistory"
+            android:parentActivityName=".Reports"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".TranscationMain"
+            android:parentActivityName=".HomeACTIVITY"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".Reports"
+            android:parentActivityName=".TranscationMain"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".All_Packages"
+            android:parentActivityName=".HomeACTIVITY"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".FULL_REFFER"
+            android:parentActivityName=".HomeACTIVITY"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".FundRequest"
+            android:parentActivityName=".TranscationMain"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Tree2Activity"
+            android:parentActivityName=".TreeSettings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".LeaderShipHistory"
+            android:parentActivityName=".Reports"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".FundHistory"
+            android:parentActivityName=".Reports"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".GenHistory"
+            android:parentActivityName=".Reports"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ReferHistory"
+            android:parentActivityName=".Reports"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".IncomeHistoryActivity"
+            android:parentActivityName=".Reports"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".UpdatePinActivity"
+            android:parentActivityName=".HomeACTIVITY"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Register2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PaymentList"
+            android:parentActivityName=".Reports"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MyPayment"
+            android:parentActivityName=".TranscationMain"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ProfileActivity"
+            android:parentActivityName=".HomeACTIVITY"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TreeSettings"
+            android:parentActivityName=".HomeACTIVITY"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PaymentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".NotificationActivity"
+            android:parentActivityName=".HomeACTIVITY"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".HomeACTIVITY"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
